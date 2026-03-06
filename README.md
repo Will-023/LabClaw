@@ -1,11 +1,11 @@
 # LabClaw Skills Library
 
-> **221 curated AI agent skills** for biomedical research — organized from [ScienceClaw](https://github.com/Zaoqu-Liu/ScienceClaw) into four focused domains.
+> **206 curated AI agent skills** for biomedical research — organized from [ScienceClaw](https://github.com/Zaoqu-Liu/ScienceClaw) into four focused domains.
 
-[![Skills](https://img.shields.io/badge/skills-221-blue?style=flat-square)](skills/)
-[![Biology](https://img.shields.io/badge/🧬_biology-89-brightgreen?style=flat-square)](skills/bio/)
-[![Medicine](https://img.shields.io/badge/🏥_medicine-33-red?style=flat-square)](skills/med/)
-[![General](https://img.shields.io/badge/⚙️_general-61-orange?style=flat-square)](skills/general/)
+[![Skills](https://img.shields.io/badge/skills-206-blue?style=flat-square)](skills/)
+[![Biology](https://img.shields.io/badge/🧬_biology-88-brightgreen?style=flat-square)](skills/bio/)
+[![Medicine](https://img.shields.io/badge/🏥_medicine-32-red?style=flat-square)](skills/med/)
+[![General](https://img.shields.io/badge/⚙️_general-48-orange?style=flat-square)](skills/general/)
 [![Literature](https://img.shields.io/badge/📚_literature-38-purple?style=flat-square)](skills/literature/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
 
@@ -17,9 +17,9 @@ Each skill is a `SKILL.md` file that instructs an AI agent **when** and **how** 
 
 | Domain | Skills | Sub-categories |
 |--------|-------:|----------------|
-| [🧬 Biology & Life Sciences](skills/bio/) | **89** | Bioinformatics · Single-cell · Genomics · Proteomics · Cheminformatics · Multi-omics · Databases · Lab platforms |
-| [🏥 Medical & Clinical](skills/med/) | **33** | Clinical trials · Drug discovery · Precision medicine · Imaging & devices |
-| [⚙️ General & Data Science](skills/general/) | **61** | Statistics · Machine learning · Data management · Visualization · Writing |
+| [🧬 Biology & Life Sciences](skills/bio/) | **88** | Bioinformatics · Single-cell · Genomics · Proteomics · Cheminformatics · Multi-omics · Databases · Lab platforms |
+| [🏥 Medical & Clinical](skills/med/) | **32** | Clinical trials · Drug discovery · Precision medicine · Imaging & devices |
+| [⚙️ General & Data Science](skills/general/) | **48** | Statistics · Machine learning · Data management · Visualization · Writing |
 | [📚 Literature & Search](skills/literature/) | **38** | Biomedical search · Chemical databases · Genomic databases · Patents & grants |
 
 ---
@@ -30,9 +30,9 @@ Each skill is a `SKILL.md` file that instructs an AI agent **when** and **how** 
 LabClaw-git/
 ├── README.md
 └── skills/
-    ├── bio/          (89 skills)  Genomics, proteomics, single-cell, cheminformatics …
-    ├── med/          (33 skills)  Clinical, drug discovery, precision medicine …
-    ├── general/      (61 skills)  Statistics, ML, visualization, writing …
+    ├── bio/          (88 skills)  Genomics, proteomics, single-cell, cheminformatics …
+    ├── med/          (32 skills)  Clinical, drug discovery, precision medicine …
+    ├── general/      (48 skills)  Statistics, ML, visualization, writing …
     └── literature/   (38 skills)  Search, databases, citation management …
 ```
 
@@ -50,7 +50,7 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 ## Table of Contents
 
-- [🧬 Biology & Life Sciences](#-biology--life-sciences) — 89 skills
+- [🧬 Biology & Life Sciences](#-biology--life-sciences) — 88 skills
   - [Bioinformatics Core](#bioinformatics-core)
   - [Single-cell & Spatial Transcriptomics](#single-cell--spatial-transcriptomics)
   - [Genomics, NGS & Variant Analysis](#genomics-ngs--variant-analysis)
@@ -59,12 +59,12 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
   - [Multi-Omics & Systems Biology](#multi-omics--systems-biology)
   - [Biological Databases](#biological-databases)
   - [Lab Platforms & Imaging](#lab-platforms--imaging)
-- [🏥 Medical & Clinical](#-medical--clinical) — 33 skills
+- [🏥 Medical & Clinical](#-medical--clinical) — 32 skills
   - [Clinical Research & Trials](#clinical-research--trials)
   - [Drug Discovery & Pharmacology](#drug-discovery--pharmacology)
   - [Precision Medicine & Oncology](#precision-medicine--oncology)
   - [Medical Imaging, Devices & Regulatory](#medical-imaging-devices--regulatory)
-- [⚙️ General & Data Science](#%EF%B8%8F-general--data-science) — 61 skills
+- [⚙️ General & Data Science](#%EF%B8%8F-general--data-science) — 48 skills
   - [Statistics & Mathematical Modeling](#statistics--mathematical-modeling)
   - [Machine Learning & AI](#machine-learning--ai)
   - [Data Management & Computing](#data-management--computing)
@@ -84,7 +84,7 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 > Tools for genomics, transcriptomics, proteomics, single-cell analysis, structural biology, cheminformatics, and lab automation.
 
-**89 skills** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
+**88 skills** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
 
 #### Bioinformatics Core
 
@@ -219,7 +219,7 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 > Tools for clinical research, drug discovery, precision medicine, oncology, pharmacology, and medical imaging.
 
-**33 skills** &nbsp;·&nbsp; [`skills/med/`](skills/med/)
+**32 skills** &nbsp;·&nbsp; [`skills/med/`](skills/med/)
 
 #### Clinical Research & Trials
 
@@ -271,7 +271,6 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 | [`neuropixels-analysis`](skills/med/neuropixels-analysis/SKILL.md) | Neuropixels neural recording analysis. Load SpikeGLX/OpenEphys data, preprocess, motion correction, Kilosort4 spike sort... |
 | [`pydicom`](skills/med/pydicom/SKILL.md) | Python library for working with DICOM (Digital Imaging and Communications in Medicine) files. Use this skill when readin... |
 | [`pyhealth`](skills/med/pyhealth/SKILL.md) | Comprehensive healthcare AI toolkit for developing, testing, and deploying machine learning models with clinical data. T... |
-| [`scientific-schematics`](skills/med/scientific-schematics/SKILL.md) | Create publication-quality scientific diagrams using Nano Banana Pro AI with smart iterative refinement. Uses Gemini 3 P... |
 | [`tooluniverse-image-analysis`](skills/med/tooluniverse-image-analysis/SKILL.md) | Production-ready microscopy image analysis and quantitative imaging data skill for colony morphometry, cell counting, fl... |
 
 
@@ -281,7 +280,7 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 > General-purpose tools for statistics, machine learning, data management, visualization, and scientific writing.
 
-**61 skills** &nbsp;·&nbsp; [`skills/general/`](skills/general/)
+**48 skills** &nbsp;·&nbsp; [`skills/general/`](skills/general/)
 
 #### Statistics & Mathematical Modeling
 
@@ -301,11 +300,9 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 | Skill | Description |
 |-------|-------------|
 | [`aeon`](skills/general/aeon/SKILL.md) | This skill should be used for time series machine learning tasks including classification, regression, clustering, forec... |
-| [`modal`](skills/general/modal/SKILL.md) | Run Python code in the cloud with serverless containers, GPUs, and autoscaling. Use when deploying ML models, running ba... |
 | [`pytorch-lightning`](skills/general/pytorch-lightning/SKILL.md) | Deep learning framework (PyTorch Lightning). Organize PyTorch code into LightningModules, configure Trainers for multi-G... |
 | [`scikit-learn`](skills/general/scikit-learn/SKILL.md) | Machine learning in Python with scikit-learn. Use when working with supervised learning (classification, regression), un... |
 | [`shap`](skills/general/shap/SKILL.md) | Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining mac... |
-| [`stable-baselines3`](skills/general/stable-baselines3/SKILL.md) | Production-ready reinforcement learning algorithms (PPO, SAC, DQN, TD3, DDPG, A2C) with scikit-learn-like API. Use for s... |
 | [`transformers`](skills/general/transformers/SKILL.md) | This skill should be used when working with pre-trained transformer models for natural language processing, computer vis... |
 
 #### Data Management & Computing
@@ -313,14 +310,12 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 | Skill | Description |
 |-------|-------------|
 | [`dask`](skills/general/dask/SKILL.md) | Distributed computing for larger-than-RAM pandas/NumPy workflows. Use when you need to scale existing pandas/NumPy code ... |
-| [`datacommons-client`](skills/general/datacommons-client/SKILL.md) | Work with Data Commons, a platform providing programmatic access to public statistical data from global sources. Use thi... |
 | [`exploratory-data-analysis`](skills/general/exploratory-data-analysis/SKILL.md) | Perform comprehensive exploratory data analysis on scientific data files across 200+ file formats. This skill should be ... |
 | [`fair-data`](skills/general/fair-data/SKILL.md) | Guidelines for making scientific data FAIR: Findable, Accessible, Interoperable, and Reusable. |
 | [`geopandas`](skills/general/geopandas/SKILL.md) | Python library for working with geospatial vector data including shapefiles, GeoJSON, and GeoPackage files. Use when wor... |
 | [`get-available-resources`](skills/general/get-available-resources/SKILL.md) | This skill should be used at the start of any computationally intensive scientific task to detect and report available s... |
 | [`markitdown`](skills/general/markitdown/SKILL.md) | Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcrip... |
 | [`networkx`](skills/general/networkx/SKILL.md) | Comprehensive toolkit for creating, analyzing, and visualizing complex networks and graphs in Python. Use when working w... |
-| [`nutrient-document-processing`](skills/general/nutrient-document-processing/SKILL.md) | Process, convert, OCR, extract, redact, sign, and fill documents using the Nutrient DWS API. Works with PDFs, DOCX, XLSX... |
 | [`polars`](skills/general/polars/SKILL.md) | Fast in-memory DataFrame library for datasets that fit in RAM. Use when pandas is too slow but data still fits in memory... |
 | [`reproducibility-checklist`](skills/general/reproducibility-checklist/SKILL.md) | Ensure research is reproducible, transparent, and meets open science standards. |
 | [`vaex`](skills/general/vaex/SKILL.md) | Use this skill for processing and analyzing large tabular datasets (billions of rows) that exceed available RAM. Vaex ex... |
@@ -330,10 +325,8 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 | Skill | Description |
 |-------|-------------|
-| [`generate-image`](skills/general/generate-image/SKILL.md) | Generate or edit images using AI models (FLUX, Gemini). Use for general-purpose image generation including photos, illus... |
 | [`matplotlib`](skills/general/matplotlib/SKILL.md) | Low-level plotting library for full customization. Use when you need fine-grained control over every plot element, creat... |
 | [`plotly`](skills/general/plotly/SKILL.md) | Interactive visualization library. Use when you need hover info, zoom, pan, or web-embeddable charts. Best for dashboard... |
-| [`scienceclaw-aesthetics`](skills/general/scienceclaw-aesthetics/SKILL.md) | Rachel's aesthetic reference for all visualization work. Use this skill when generating any scientific figure. |
 | [`scientific-diagram-generation`](skills/general/scientific-diagram-generation/SKILL.md) | AI-powered scientific illustration generation using Gemini Image models. Creates publication-quality mechanism diagrams,... |
 | [`scientific-visualization`](skills/general/scientific-visualization/SKILL.md) | Meta-skill for publication-ready figures. Use when creating journal submission figures requiring multi-panel layouts, si... |
 | [`seaborn`](skills/general/seaborn/SKILL.md) | Statistical visualization with pandas integration. Use for quick exploration of distributions, relationships, and catego... |
@@ -344,17 +337,14 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 | Skill | Description |
 |-------|-------------|
 | [`article-writing`](skills/general/article-writing/SKILL.md) | Write articles, guides, blog posts, tutorials, newsletter issues, and other long-form content in a distinctive voice der... |
-| [`frontend-slides`](skills/general/frontend-slides/SKILL.md) | Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wan... |
 | [`hypothesis-generation`](skills/general/hypothesis-generation/SKILL.md) | Structured hypothesis formulation from observations. Use when you have experimental observations or data and need to for... |
 | [`latex-posters`](skills/general/latex-posters/SKILL.md) | Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Support for conference presen... |
-| [`paper-2-web`](skills/general/paper-2-web/SKILL.md) | This skill should be used when converting academic papers into promotional and presentation formats including interactiv... |
 | [`peer-review`](skills/general/peer-review/SKILL.md) | Structured manuscript/grant review with checklist-based evaluation. Use when writing formal peer reviews with specific c... |
 | [`pptx-generation`](skills/general/pptx-generation/SKILL.md) | Create publication-quality academic presentations (.pptx) for group meetings, thesis defenses, conference talks, and pos... |
 | [`pptx-posters`](skills/general/pptx-posters/SKILL.md) | Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly... |
 | [`protocol-writing`](skills/general/protocol-writing/SKILL.md) | Write clear, reproducible experimental protocols and Standard Operating Procedures (SOPs) for any scientific discipline. |
 | [`scholar-evaluation`](skills/general/scholar-evaluation/SKILL.md) | Systematically evaluate scholarly work using the ScholarEval framework, providing structured assessment across research ... |
 | [`science-communication`](skills/general/science-communication/SKILL.md) | Translate complex scientific findings into engaging content for non-specialist audiences. |
-| [`scienceclaw-presentations`](skills/general/scienceclaw-presentations/SKILL.md) | Joey's reference for all presentation work. Use this skill when creating academic presentations. |
 | [`scientific-brainstorming`](skills/general/scientific-brainstorming/SKILL.md) | Creative research ideation and exploration. Use for open-ended brainstorming sessions, exploring interdisciplinary conne... |
 | [`scientific-critical-thinking`](skills/general/scientific-critical-thinking/SKILL.md) | Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and ... |
 | [`scientific-slides`](skills/general/scientific-slides/SKILL.md) | Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations,... |
@@ -366,11 +356,7 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 | Skill | Description |
 |-------|-------------|
-| [`market-research-reports`](skills/general/market-research-reports/SKILL.md) | Generate comprehensive market research reports (50+ pages) in the style of top consulting firms (McKinsey, BCG, Gartner)... |
 | [`patent-drafting`](skills/general/patent-drafting/SKILL.md) | Draft patent applications for scientific inventions, covering claims, specification, and prior art analysis. |
-| [`pumc-create-docx`](skills/general/pumc-create-docx/SKILL.md) | 将markdown论文稿转换为符合北京协和医学院2025版博士学位论文格式规范的docx文件。当用户提到转docx、生成docx、导出Word、md转Word、格式化论文、create docx时触发。所有字体字号行距边距均严格对标协和官方... |
-| [`pumc-thesis-review`](skills/general/pumc-thesis-review/SKILL.md) | 审核并修改已写好的协和医学院博士论文内容，检查格式规范、AI写作痕迹、学术表达质量，然后直接修改原文。当用户提到审核论文、检查论文、review论文、查AI味、去AI味、降AI率、论文审稿、帮我看看、检查格式、帮我改改时触发。基于2025版... |
-| [`pumc-thesis-writing`](skills/general/pumc-thesis-writing/SKILL.md) | 按照北京协和医学院（PUMC）博士学位论文的严格格式规范撰写论文内容。当用户提到协和论文、协和格式、写论文、写前言、写结果、写讨论、写结论、去AI味、降AI率、PUMC thesis、协和参考论文、部分制论文时触发。基于2025版协和官方写... |
 | [`regulatory-submission`](skills/general/regulatory-submission/SKILL.md) | Prepare regulatory submissions for drugs, biologics, devices, and diagnostics. |
 
 
