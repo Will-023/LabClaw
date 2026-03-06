@@ -4,9 +4,10 @@
 
 **A production-ready OpenClaw skill library for autonomous biomedical research**
 
-[![Skills](https://img.shields.io/badge/skills-206-blue?style=flat-square)](skills/)
+[![Skills](https://img.shields.io/badge/skills-211-blue?style=flat-square)](skills/)
 [![Biology](https://img.shields.io/badge/🧬_biology-66-brightgreen?style=flat-square)](skills/bio/)
 [![LabOS](https://img.shields.io/badge/🤖_labos-7-cyan?style=flat-square)](skills/labos/)
+[![Vision](https://img.shields.io/badge/👁️_vision-5-yellow?style=flat-square)](skills/vision/)
 [![Pharmacy](https://img.shields.io/badge/💊_pharmacy-36-blueviolet?style=flat-square)](skills/pharma/)
 [![Medicine](https://img.shields.io/badge/🏥_medicine-20-red?style=flat-square)](skills/med/)
 [![General](https://img.shields.io/badge/⚙️_general-48-orange?style=flat-square)](skills/general/)
@@ -24,7 +25,7 @@
 
 ## Overview
 
-LabClaw packages **206 production-ready `SKILL.md` files** for biomedical AI workflows across biology, drug discovery, medicine, data science, and literature research. Each skill teaches an OpenClaw-compatible agent **when** to use a tool, **how** to call it, and **what kind of output** to produce.
+LabClaw packages **211 production-ready `SKILL.md` files** for biomedical AI workflows across biology, lab automation, vision/XR, drug discovery, medicine, data science, and literature research. Each skill teaches an OpenClaw-compatible agent **when** to use a tool, **how** to call it, and **what kind of output** to produce.
 
 The collection is designed for researchers who want a practical, modular skill layer instead of a generic prompt bundle. You can use it as a broad starter library, or cherry-pick only the subfolders relevant to your lab, team, or project.
 
@@ -34,6 +35,7 @@ The collection is designed for researchers who want a practical, modular skill l
 |--------|-------:|-------|
 | [🧬 Biology & Life Sciences](skills/bio/) | **66** | Bioinformatics, single-cell, genomics, proteomics, multi-omics, databases |
 | [🤖 LabOS & Automation](skills/labos/) | **7** | Lab robots, LIMS/ELN, cloud platforms, protocol management |
+| [👁️ Vision & XR](skills/vision/) | **5** | Hand tracking, 3D pose estimation, segmentation, egocentric vision |
 | [💊 Pharmacy & Drug Discovery](skills/pharma/) | **36** | Cheminformatics, molecular ML, docking, target research, pharmacology, drug databases |
 | [🏥 Medical & Clinical](skills/med/) | **20** | Clinical trials, precision medicine, oncology, infectious disease, medical imaging |
 | [⚙️ General & Data Science](skills/general/) | **48** | Statistics, machine learning, data management, visualization, scientific writing |
@@ -67,6 +69,7 @@ LabClaw/
 └── skills/
     ├── bio/         # 66 skills: genomics, proteomics, single-cell, systems biology
     ├── labos/       # 7 skills: lab robots, LIMS/ELN, cloud platforms, protocols
+    ├── vision/      # 5 skills: hand tracking, 3D pose, segmentation, egocentric
     ├── pharma/      # 36 skills: cheminformatics, docking, target discovery, pharmacology
     ├── med/         # 20 skills: clinical research, precision medicine, oncology, imaging
     ├── general/     # 48 skills: statistics, ML, visualization, writing, reproducibility
@@ -232,6 +235,35 @@ The original catalog is preserved below, but grouped into collapsible sections t
 | Skill | Description |
 |-------|-------------|
 | [`protocolsio-integration`](skills/bio/protocolsio-integration/SKILL.md) | Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protoco... |
+
+</details>
+
+<details>
+<summary><strong>👁️ Vision & XR — 5 skills</strong></summary>
+
+> Tools for hand tracking, 3D pose estimation, hand-object segmentation, and egocentric vision. Optimized for XR/AR applications, smart glasses interfaces, and computer vision research.
+
+**5 skills** &nbsp;·&nbsp; [`skills/vision/`](skills/vision/)
+
+#### Hand Detection & Tracking
+
+| Skill | Description |
+|-------|-------------|
+| [`handtracking`](skills/vision/handtracking/SKILL.md) | Real-time hand detection in egocentric videos using victordibia/handtracking. Outputs bounding boxes for hands, specifically trained on EgoHands dataset. Lightweight and fast for egocentric view applications. |
+| [`hands-3d-pose`](skills/vision/hands-3d-pose/SKILL.md) | High-quality 3D hand pose estimation for egocentric videos (ECCV 2024). Provides 3D joint keypoints and skeleton visualization projected to 2D. Optimized for daily egocentric activities with state-of-the-art accuracy. |
+
+#### Segmentation & Analysis
+
+| Skill | Description |
+|-------|-------------|
+| [`egohos-segmentation`](skills/vision/egohos-segmentation/SKILL.md) | Egocentric hand-object segmentation (EgoHOS) - pixel-level hand and object masks in egocentric videos. Specialized for hand-object interaction scenarios with pixel-accurate masks for detailed interaction analysis. |
+
+#### Multi-View 3D Tracking
+
+| Skill | Description |
+|-------|-------------|
+| [`hot3d`](skills/vision/hot3d/SKILL.md) | HOT3D (Hand-Object 3D Dataset) by Meta Facebook - multi-view egocentric hand and object 3D tracking for Aria/Quest smart glasses. State-of-the-art multi-view 3D hand pose, object pose, and hand-object interaction tracking with millimeter accuracy. |
+| [`hand-tracking-toolkit`](skills/vision/hand-tracking-toolkit/SKILL.md) | Facebook Research hand tracking evaluation and visualization toolkit. Supports loading HOT3D data, computing metrics (PA-MPJPE, AUC), visualizing 3D pose projections, and generating tracking evaluation reports. |
 
 </details>
 
