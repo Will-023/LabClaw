@@ -47,17 +47,14 @@ The collection is designed for researchers who want a practical, modular skill l
 | Statistics, ML, and figure generation | [`statistics`](skills/general/statistics/SKILL.md), [`scikit-learn`](skills/general/scikit-learn/SKILL.md), [`scientific-visualization`](skills/general/scientific-visualization/SKILL.md) |
 | Literature review and reporting | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md), [`citation-management`](skills/literature/citation-management/SKILL.md), [`scientific-writing`](skills/general/scientific-writing/SKILL.md) |
 
-## Quick Start
+## 3-Second Quick Start
 
-OpenClaw loads workspace skills from `<workspace>/skills`. A practical setup is:
-
+Just send the message to OpenClaw:
 ```bash
-git clone https://github.com/wu-yc/LabClaw.git
-mkdir -p ~/.openclaw/workspace/skills
-cp -R LabClaw/skills/* ~/.openclaw/workspace/skills/
+install https://github.com/wu-yc/LabClaw
 ```
 
-Then start a **new OpenClaw session** so the skill folders are picked up. If you already keep your workspace in git, merge only the folders you want rather than copying the full library.
+
 
 ## Repository Layout
 
