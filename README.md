@@ -1,6 +1,6 @@
 # LabClaw Skills Library
 
-> **206 curated AI agent skills** for biomedical research — organized from [ScienceClaw](https://github.com/Zaoqu-Liu/ScienceClaw) into five focused domains.
+> **206 curated AI agent skills** for biomedical research — organized into five focused domains.
 
 [![Skills](https://img.shields.io/badge/skills-206-blue?style=flat-square)](skills/)
 [![Biology](https://img.shields.io/badge/🧬_biology-73-brightgreen?style=flat-square)](skills/bio/)
@@ -43,11 +43,11 @@ LabClaw-git/
 
 ## How to Install
 
-在 [ScienceClaw / OpenClaw](https://github.com/Zaoqu-Liu/ScienceClaw) 中，直接告诉 Monica：
+在 OpenClaw 中，直接告诉 Monica：
 
 > **"请帮我安装这个 GitHub 仓库里的 skills：`https://github.com/YOUR_USERNAME/LabClaw-git`"**
 
-Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 ScienceClaw 环境中。
+Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的环境中。
 
 ---
 
@@ -481,7 +481,7 @@ Every `SKILL.md` follows a consistent structure:
 
 ## Credits
 
-Skills sourced from [ScienceClaw](https://github.com/Zaoqu-Liu/ScienceClaw) by [LIU Zaoqu](https://github.com/Zaoqu-Liu) (IAPM · pi-HuB).
+Skills curated by [LIU Zaoqu](https://github.com/Zaoqu-Liu) (IAPM · pi-HuB).
 
 ---
 
