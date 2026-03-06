@@ -1,12 +1,13 @@
 # LabClaw Skills Library
 
-> **206 curated AI agent skills** for biomedical research — organized from [ScienceClaw](https://github.com/Zaoqu-Liu/ScienceClaw) into four focused domains.
+> **206 curated AI agent skills** for biomedical research — organized from [ScienceClaw](https://github.com/Zaoqu-Liu/ScienceClaw) into five focused domains.
 
 [![Skills](https://img.shields.io/badge/skills-206-blue?style=flat-square)](skills/)
-[![Biology](https://img.shields.io/badge/🧬_biology-88-brightgreen?style=flat-square)](skills/bio/)
-[![Medicine](https://img.shields.io/badge/🏥_medicine-32-red?style=flat-square)](skills/med/)
+[![Biology](https://img.shields.io/badge/🧬_biology-73-brightgreen?style=flat-square)](skills/bio/)
+[![Pharmacy](https://img.shields.io/badge/💊_pharmacy-36-blueviolet?style=flat-square)](skills/pharma/)
+[![Medicine](https://img.shields.io/badge/🏥_medicine-20-red?style=flat-square)](skills/med/)
 [![General](https://img.shields.io/badge/⚙️_general-48-orange?style=flat-square)](skills/general/)
-[![Literature](https://img.shields.io/badge/📚_literature-38-purple?style=flat-square)](skills/literature/)
+[![Literature](https://img.shields.io/badge/📚_literature-29-purple?style=flat-square)](skills/literature/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square)](LICENSE)
 
 ---
@@ -17,10 +18,11 @@ Each skill is a `SKILL.md` file that instructs an AI agent **when** and **how** 
 
 | Domain | Skills | Sub-categories |
 |--------|-------:|----------------|
-| [🧬 Biology & Life Sciences](skills/bio/) | **88** | Bioinformatics · Single-cell · Genomics · Proteomics · Cheminformatics · Multi-omics · Databases · Lab platforms |
-| [🏥 Medical & Clinical](skills/med/) | **32** | Clinical trials · Drug discovery · Precision medicine · Imaging & devices |
+| [🧬 Biology & Life Sciences](skills/bio/) | **73** | Bioinformatics · Single-cell · Genomics · Proteomics · Multi-omics · Databases · Lab platforms |
+| [💊 Pharmacy & Drug Discovery](skills/pharma/) | **36** | Cheminformatics · Molecular ML · Docking · Drug research · Pharmacology · Drug databases |
+| [🏥 Medical & Clinical](skills/med/) | **20** | Clinical trials · Precision medicine · Oncology · Imaging & devices |
 | [⚙️ General & Data Science](skills/general/) | **48** | Statistics · Machine learning · Data management · Visualization · Writing |
-| [📚 Literature & Search](skills/literature/) | **38** | Biomedical search · Chemical databases · Genomic databases · Patents & grants |
+| [📚 Literature & Search](skills/literature/) | **29** | Biomedical search · Genomic databases · Multi-source search · Patents & grants |
 
 ---
 
@@ -30,10 +32,11 @@ Each skill is a `SKILL.md` file that instructs an AI agent **when** and **how** 
 LabClaw-git/
 ├── README.md
 └── skills/
-    ├── bio/          (88 skills)  Genomics, proteomics, single-cell, cheminformatics …
-    ├── med/          (32 skills)  Clinical, drug discovery, precision medicine …
+    ├── bio/          (73 skills)  Genomics, proteomics, single-cell, systems biology …
+    ├── pharma/       (36 skills)  Cheminformatics, docking, drug discovery, pharmacology …
+    ├── med/          (20 skills)  Clinical trials, precision medicine, oncology …
     ├── general/      (48 skills)  Statistics, ML, visualization, writing …
-    └── literature/   (38 skills)  Search, databases, citation management …
+    └── literature/   (29 skills)  Search, databases, citations …
 ```
 
 ---
@@ -50,18 +53,23 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 ## Table of Contents
 
-- [🧬 Biology & Life Sciences](#-biology--life-sciences) — 88 skills
+- [🧬 Biology & Life Sciences](#-biology--life-sciences) — 73 skills
   - [Bioinformatics Core](#bioinformatics-core)
   - [Single-cell & Spatial Transcriptomics](#single-cell--spatial-transcriptomics)
   - [Genomics, NGS & Variant Analysis](#genomics-ngs--variant-analysis)
   - [Proteomics & Structural Biology](#proteomics--structural-biology)
-  - [Cheminformatics & Drug Design](#cheminformatics--drug-design)
   - [Multi-Omics & Systems Biology](#multi-omics--systems-biology)
   - [Biological Databases](#biological-databases)
   - [Lab Platforms & Imaging](#lab-platforms--imaging)
-- [🏥 Medical & Clinical](#-medical--clinical) — 32 skills
+- [💊 Pharmacy & Drug Discovery](#-pharmacy--drug-discovery) — 36 skills
+  - [Cheminformatics & Molecular Design](#cheminformatics--molecular-design)
+  - [Molecular Machine Learning](#molecular-machine-learning)
+  - [Molecular Docking & Protein Therapeutics](#molecular-docking--protein-therapeutics)
+  - [Drug Research & Target Discovery](#drug-research--target-discovery)
+  - [Pharmacology & Safety](#pharmacology--safety)
+  - [Chemical & Drug Databases](#chemical--drug-databases)
+- [🏥 Medical & Clinical](#-medical--clinical) — 20 skills
   - [Clinical Research & Trials](#clinical-research--trials)
-  - [Drug Discovery & Pharmacology](#drug-discovery--pharmacology)
   - [Precision Medicine & Oncology](#precision-medicine--oncology)
   - [Medical Imaging, Devices & Regulatory](#medical-imaging-devices--regulatory)
 - [⚙️ General & Data Science](#%EF%B8%8F-general--data-science) — 48 skills
@@ -71,9 +79,8 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
   - [Visualization](#visualization)
   - [Scientific Writing & Presentation](#scientific-writing--presentation)
   - [IP, Regulatory & Reporting](#ip-regulatory--reporting)
-- [📚 Literature & Search](#-literature--search) — 38 skills
+- [📚 Literature & Search](#-literature--search) — 29 skills
   - [Biomedical Literature Search](#biomedical-literature-search)
-  - [Chemical & Drug Databases](#chemical--drug-databases)
   - [Genomic & Clinical Databases](#genomic--clinical-databases)
   - [Multi-Source Search & Discovery](#multi-source-search--discovery)
   - [Patents, Grants & Citation Management](#patents-grants--citation-management)
@@ -82,9 +89,9 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 ## 🧬 Biology & Life Sciences
 
-> Tools for genomics, transcriptomics, proteomics, single-cell analysis, structural biology, cheminformatics, and lab automation.
+> Tools for genomics, transcriptomics, proteomics, single-cell analysis, structural biology, systems biology, and lab automation.
 
-**88 skills** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
+**73 skills** &nbsp;·&nbsp; [`skills/bio/`](skills/bio/)
 
 #### Bioinformatics Core
 
@@ -144,30 +151,13 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 | Skill | Description |
 |-------|-------------|
-| [`adaptyv`](skills/bio/adaptyv/SKILL.md) | Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experime... |
 | [`alphafold-database`](skills/bio/alphafold-database/SKILL.md) | Access AlphaFold 200M+ AI-predicted protein structures. Retrieve structures by UniProt ID, download PDB/mmCIF files, ana... |
-| [`diffdock`](skills/bio/diffdock/SKILL.md) | Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual scre... |
 | [`esm`](skills/bio/esm/SKILL.md) | Comprehensive toolkit for protein language models including ESM3 (generative multimodal protein design across sequence, ... |
 | [`pyopenms`](skills/bio/pyopenms/SKILL.md) | Complete mass spectrometry analysis platform. Use for proteomics workflows feature detection, peptide identification, pr... |
 | [`tooluniverse-protein-interactions`](skills/bio/tooluniverse-protein-interactions/SKILL.md) | Analyze protein-protein interaction networks using STRING, BioGRID, and SASBDB databases. Maps protein identifiers, retr... |
 | [`tooluniverse-protein-structure-retrieval`](skills/bio/tooluniverse-protein-structure-retrieval/SKILL.md) | Retrieves protein structure data from RCSB PDB, PDBe, and AlphaFold with protein disambiguation, quality assessment, and... |
 | [`tooluniverse-proteomics-analysis`](skills/bio/tooluniverse-proteomics-analysis/SKILL.md) | Analyze mass spectrometry proteomics data including protein quantification, differential expression, post-translational ... |
 | [`uniprot-database`](skills/bio/uniprot-database/SKILL.md) | Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflow... |
-
-#### Cheminformatics & Drug Design
-
-| Skill | Description |
-|-------|-------------|
-| [`chemistry`](skills/bio/chemistry/SKILL.md) | Computational chemistry, cheminformatics, and drug discovery workflows. |
-| [`datamol`](skills/bio/datamol/SKILL.md) | Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery inc... |
-| [`deepchem`](skills/bio/deepchem/SKILL.md) | Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditi... |
-| [`medchem`](skills/bio/medchem/SKILL.md) | Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity m... |
-| [`molfeat`](skills/bio/molfeat/SKILL.md) | Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMIL... |
-| [`pytdc`](skills/bio/pytdc/SKILL.md) | Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecula... |
-| [`rdkit`](skills/bio/rdkit/SKILL.md) | Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprin... |
-| [`rowan`](skills/bio/rowan/SKILL.md) | Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa pr... |
-| [`torch_geometric`](skills/bio/torch_geometric/SKILL.md) | Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, mole... |
-| [`torchdrug`](skills/bio/torchdrug/SKILL.md) | PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug dis... |
 
 #### Multi-Omics & Systems Biology
 
@@ -188,13 +178,10 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 | [`brenda-database`](skills/bio/brenda-database/SKILL.md) | Access BRENDA enzyme database via SOAP API. Retrieve kinetic parameters (Km, kcat), reaction equations, organism data, a... |
 | [`clinpgx-database`](skills/bio/clinpgx-database/SKILL.md) | Access ClinPGx pharmacogenomics data (successor to PharmGKB). Query gene-drug interactions, CPIC guidelines, allele func... |
 | [`cosmic-database`](skills/bio/cosmic-database/SKILL.md) | Access COSMIC cancer mutation database. Query somatic mutations, Cancer Gene Census, mutational signatures, gene fusions... |
-| [`drugbank-database`](skills/bio/drugbank-database/SKILL.md) | Access and analyze comprehensive drug information from the DrugBank database including drug properties, interactions, ta... |
 | [`ena-database`](skills/bio/ena-database/SKILL.md) | Access European Nucleotide Archive via API/FTP. Retrieve DNA/RNA sequences, raw reads (FASTQ), genome assemblies by acce... |
 | [`ensembl-database`](skills/bio/ensembl-database/SKILL.md) | Query Ensembl genome database REST API for 250+ species. Gene lookups, sequence retrieval, variant analysis, comparative... |
-| [`fda-database`](skills/bio/fda-database/SKILL.md) | Query openFDA API for drugs, devices, adverse events, recalls, regulatory submissions (510k, PMA), substance identificat... |
 | [`kegg-database`](skills/bio/kegg-database/SKILL.md) | Direct REST API access to KEGG (academic use only). Pathway analysis, gene-pathway mapping, metabolic pathways, drug int... |
 | [`metabolomics-workbench-database`](skills/bio/metabolomics-workbench-database/SKILL.md) | Access NIH Metabolomics Workbench via REST API (4,200+ studies). Query metabolites, RefMet nomenclature, MS/NMR data, m/... |
-| [`opentargets-database`](skills/bio/opentargets-database/SKILL.md) | Query Open Targets Platform for target-disease associations, drug target discovery, tractability/safety data, genetics/o... |
 | [`reactome-database`](skills/bio/reactome-database/SKILL.md) | Query Reactome REST API for pathway analysis, enrichment, gene-pathway mapping, disease pathways, molecular interactions... |
 | [`string-database`](skills/bio/string-database/SKILL.md) | Query STRING API for protein-protein interactions (59M proteins, 20B interactions). Network analysis, GO/KEGG enrichment... |
 
@@ -215,11 +202,86 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 ---
 
+## 💊 Pharmacy & Drug Discovery
+
+> Tools for cheminformatics, molecular docking, drug design, pharmacology, pharmacovigilance, and drug databases.
+
+**36 skills** &nbsp;·&nbsp; [`skills/pharma/`](skills/pharma/)
+
+#### Cheminformatics & Molecular Design
+
+| Skill | Description |
+|-------|-------------|
+| [`chemistry`](skills/pharma/chemistry/SKILL.md) | Computational chemistry, cheminformatics, and drug discovery workflows. |
+| [`datamol`](skills/pharma/datamol/SKILL.md) | Pythonic wrapper around RDKit with simplified interface and sensible defaults. Preferred for standard drug discovery inc... |
+| [`deepchem`](skills/pharma/deepchem/SKILL.md) | Molecular ML with diverse featurizers and pre-built datasets. Use for property prediction (ADMET, toxicity) with traditi... |
+| [`medchem`](skills/pharma/medchem/SKILL.md) | Medicinal chemistry filters. Apply drug-likeness rules (Lipinski, Veber), PAINS filters, structural alerts, complexity m... |
+| [`molfeat`](skills/pharma/molfeat/SKILL.md) | Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMIL... |
+| [`rdkit`](skills/pharma/rdkit/SKILL.md) | Cheminformatics toolkit for fine-grained molecular control. SMILES/SDF parsing, descriptors (MW, LogP, TPSA), fingerprin... |
+| [`rowan`](skills/pharma/rowan/SKILL.md) | Cloud-based quantum chemistry platform with Python API. Preferred for computational chemistry workflows including pKa pr... |
+
+#### Molecular Machine Learning
+
+| Skill | Description |
+|-------|-------------|
+| [`pytdc`](skills/pharma/pytdc/SKILL.md) | Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecula... |
+| [`torch_geometric`](skills/pharma/torch_geometric/SKILL.md) | Graph Neural Networks (PyG). Node/graph classification, link prediction, GCN, GAT, GraphSAGE, heterogeneous graphs, mole... |
+| [`torchdrug`](skills/pharma/torchdrug/SKILL.md) | PyTorch-native graph neural networks for molecules and proteins. Use when building custom GNN architectures for drug dis... |
+
+#### Molecular Docking & Protein Therapeutics
+
+| Skill | Description |
+|-------|-------------|
+| [`adaptyv`](skills/pharma/adaptyv/SKILL.md) | Cloud laboratory platform for automated protein testing and validation. Use when designing proteins and needing experime... |
+| [`diffdock`](skills/pharma/diffdock/SKILL.md) | Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual scre... |
+| [`tooluniverse-antibody-engineering`](skills/pharma/tooluniverse-antibody-engineering/SKILL.md) | Comprehensive antibody engineering and optimization for therapeutic development. Covers humanization, affinity maturatio... |
+| [`tooluniverse-binder-discovery`](skills/pharma/tooluniverse-binder-discovery/SKILL.md) | Discover novel small molecule binders for protein targets using structure-based and ligand-based approaches. Creates act... |
+| [`tooluniverse-protein-therapeutic-design`](skills/pharma/tooluniverse-protein-therapeutic-design/SKILL.md) | Design novel protein therapeutics (binders, enzymes, scaffolds) using AI-guided de novo design. Uses RFdiffusion for bac... |
+
+#### Drug Research & Target Discovery
+
+| Skill | Description |
+|-------|-------------|
+| [`tooluniverse-drug-repurposing`](skills/pharma/tooluniverse-drug-repurposing/SKILL.md) | Identify drug repurposing candidates using ToolUniverse for target-based, compound-based, and disease-driven strategies.... |
+| [`tooluniverse-drug-research`](skills/pharma/tooluniverse-drug-research/SKILL.md) | Generates comprehensive drug research reports with compound disambiguation, evidence grading, and mandatory completeness... |
+| [`tooluniverse-drug-target-validation`](skills/pharma/tooluniverse-drug-target-validation/SKILL.md) | Comprehensive computational validation of drug targets for early-stage drug discovery. Evaluates targets across 10 dimen... |
+| [`tooluniverse-target-research`](skills/pharma/tooluniverse-target-research/SKILL.md) | Gather comprehensive biological target intelligence from 9 parallel research paths covering protein info, structure, int... |
+
+#### Pharmacology & Safety
+
+| Skill | Description |
+|-------|-------------|
+| [`tooluniverse-adverse-event-detection`](skills/pharma/tooluniverse-adverse-event-detection/SKILL.md) | Detect and analyze adverse drug event signals using FDA FAERS data, drug labels, disproportionality analysis (PRR, ROR, ... |
+| [`tooluniverse-chemical-safety`](skills/pharma/tooluniverse-chemical-safety/SKILL.md) | Comprehensive chemical safety and toxicology assessment integrating ADMET-AI predictions, CTD toxicogenomics, FDA label ... |
+| [`tooluniverse-drug-drug-interaction`](skills/pharma/tooluniverse-drug-drug-interaction/SKILL.md) | Comprehensive drug-drug interaction (DDI) prediction and risk assessment. Analyzes interaction mechanisms (CYP450, trans... |
+| [`tooluniverse-network-pharmacology`](skills/pharma/tooluniverse-network-pharmacology/SKILL.md) | Construct and analyze compound-target-disease networks for drug repurposing, polypharmacology discovery, and systems pha... |
+| [`tooluniverse-pharmacovigilance`](skills/pharma/tooluniverse-pharmacovigilance/SKILL.md) | Analyze drug safety signals from FDA adverse event reports, label warnings, and pharmacogenomic data. Calculates disprop... |
+
+#### Chemical & Drug Databases
+
+| Skill | Description |
+|-------|-------------|
+| [`chembl-database`](skills/pharma/chembl-database/SKILL.md) | Query ChEMBL bioactive molecules and drug discovery data. Search compounds by structure/properties, retrieve bioactivity... |
+| [`chembl-search`](skills/pharma/chembl-search/SKILL.md) | Search ChEMBL bioactive molecules database with natural language queries. Find compounds and assay data with Valyu seman... |
+| [`drug-discovery-search`](skills/pharma/drug-discovery-search/SKILL.md) | End-to-end drug discovery platform combining ChEMBL compounds, DrugBank, targets, and FDA labels. Natural language power... |
+| [`drug-labels-search`](skills/pharma/drug-labels-search/SKILL.md) | Search FDA drug labels with natural language queries. Official drug information, indications, and safety data via Valyu. |
+| [`drugbank-database`](skills/pharma/drugbank-database/SKILL.md) | Access and analyze comprehensive drug information from the DrugBank database including drug properties, interactions, ta... |
+| [`drugbank-search`](skills/pharma/drugbank-search/SKILL.md) | Search DrugBank comprehensive drug database with natural language queries. Drug mechanisms, interactions, and safety dat... |
+| [`fda-database`](skills/pharma/fda-database/SKILL.md) | Query openFDA API for drugs, devices, adverse events, recalls, regulatory submissions (510k, PMA), substance identificat... |
+| [`open-targets-search`](skills/pharma/open-targets-search/SKILL.md) | Search Open Targets drug-disease associations with natural language queries. Target validation powered by Valyu semantic... |
+| [`opentargets-database`](skills/pharma/opentargets-database/SKILL.md) | Query Open Targets Platform for target-disease associations, drug target discovery, tractability/safety data, genetics/o... |
+| [`pubchem-database`](skills/pharma/pubchem-database/SKILL.md) | Query PubChem via PUG-REST API/PubChemPy (110M+ compounds). Search by name/CID/SMILES, retrieve properties, similarity/s... |
+| [`tooluniverse-chemical-compound-retrieval`](skills/pharma/tooluniverse-chemical-compound-retrieval/SKILL.md) | Retrieves chemical compound information from PubChem and ChEMBL with disambiguation, cross-referencing, and quality asse... |
+| [`zinc-database`](skills/pharma/zinc-database/SKILL.md) | Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for dockin... |
+
+
+---
+
 ## 🏥 Medical & Clinical
 
-> Tools for clinical research, drug discovery, precision medicine, oncology, pharmacology, and medical imaging.
+> Tools for clinical research, precision medicine, oncology, infectious disease, and medical imaging.
 
-**32 skills** &nbsp;·&nbsp; [`skills/med/`](skills/med/)
+**20 skills** &nbsp;·&nbsp; [`skills/med/`](skills/med/)
 
 #### Clinical Research & Trials
 
@@ -233,34 +295,17 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 | [`tooluniverse-clinical-trial-matching`](skills/med/tooluniverse-clinical-trial-matching/SKILL.md) | AI-driven patient-to-trial matching for precision medicine and oncology. Given a patient profile (disease, molecular alt... |
 | [`treatment-plans`](skills/med/treatment-plans/SKILL.md) | Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties. Supports ... |
 
-#### Drug Discovery & Pharmacology
-
-| Skill | Description |
-|-------|-------------|
-| [`tooluniverse-adverse-event-detection`](skills/med/tooluniverse-adverse-event-detection/SKILL.md) | Detect and analyze adverse drug event signals using FDA FAERS data, drug labels, disproportionality analysis (PRR, ROR, ... |
-| [`tooluniverse-binder-discovery`](skills/med/tooluniverse-binder-discovery/SKILL.md) | Discover novel small molecule binders for protein targets using structure-based and ligand-based approaches. Creates act... |
-| [`tooluniverse-chemical-safety`](skills/med/tooluniverse-chemical-safety/SKILL.md) | Comprehensive chemical safety and toxicology assessment integrating ADMET-AI predictions, CTD toxicogenomics, FDA label ... |
-| [`tooluniverse-drug-drug-interaction`](skills/med/tooluniverse-drug-drug-interaction/SKILL.md) | Comprehensive drug-drug interaction (DDI) prediction and risk assessment. Analyzes interaction mechanisms (CYP450, trans... |
-| [`tooluniverse-drug-repurposing`](skills/med/tooluniverse-drug-repurposing/SKILL.md) | Identify drug repurposing candidates using ToolUniverse for target-based, compound-based, and disease-driven strategies.... |
-| [`tooluniverse-drug-research`](skills/med/tooluniverse-drug-research/SKILL.md) | Generates comprehensive drug research reports with compound disambiguation, evidence grading, and mandatory completeness... |
-| [`tooluniverse-drug-target-validation`](skills/med/tooluniverse-drug-target-validation/SKILL.md) | Comprehensive computational validation of drug targets for early-stage drug discovery. Evaluates targets across 10 dimen... |
-| [`tooluniverse-network-pharmacology`](skills/med/tooluniverse-network-pharmacology/SKILL.md) | Construct and analyze compound-target-disease networks for drug repurposing, polypharmacology discovery, and systems pha... |
-| [`tooluniverse-pharmacovigilance`](skills/med/tooluniverse-pharmacovigilance/SKILL.md) | Analyze drug safety signals from FDA adverse event reports, label warnings, and pharmacogenomic data. Calculates disprop... |
-
 #### Precision Medicine & Oncology
 
 | Skill | Description |
 |-------|-------------|
-| [`tooluniverse-antibody-engineering`](skills/med/tooluniverse-antibody-engineering/SKILL.md) | Comprehensive antibody engineering and optimization for therapeutic development. Covers humanization, affinity maturatio... |
 | [`tooluniverse-cancer-variant-interpretation`](skills/med/tooluniverse-cancer-variant-interpretation/SKILL.md) | Provide comprehensive clinical interpretation of somatic mutations in cancer. Given a gene symbol + variant (e.g., EGFR ... |
 | [`tooluniverse-disease-research`](skills/med/tooluniverse-disease-research/SKILL.md) | Generate comprehensive disease research reports using 100+ ToolUniverse tools. Creates a detailed markdown report file a... |
 | [`tooluniverse-immunotherapy-response-prediction`](skills/med/tooluniverse-immunotherapy-response-prediction/SKILL.md) | Predict patient response to immune checkpoint inhibitors (ICIs) using multi-biomarker integration. Given a cancer type, ... |
 | [`tooluniverse-infectious-disease`](skills/med/tooluniverse-infectious-disease/SKILL.md) | Rapid pathogen characterization and drug repurposing analysis for infectious disease outbreaks. Identifies pathogen taxo... |
 | [`tooluniverse-precision-medicine-stratification`](skills/med/tooluniverse-precision-medicine-stratification/SKILL.md) | Comprehensive patient stratification for precision medicine by integrating genomic, clinical, and therapeutic data. Give... |
 | [`tooluniverse-precision-oncology`](skills/med/tooluniverse-precision-oncology/SKILL.md) | Provide actionable treatment recommendations for cancer patients based on molecular profile. Interprets tumor mutations,... |
-| [`tooluniverse-protein-therapeutic-design`](skills/med/tooluniverse-protein-therapeutic-design/SKILL.md) | Design novel protein therapeutics (binders, enzymes, scaffolds) using AI-guided de novo design. Uses RFdiffusion for bac... |
 | [`tooluniverse-rare-disease-diagnosis`](skills/med/tooluniverse-rare-disease-diagnosis/SKILL.md) | Provide differential diagnosis for patients with suspected rare diseases based on phenotype and genetic data. Matches sy... |
-| [`tooluniverse-target-research`](skills/med/tooluniverse-target-research/SKILL.md) | Gather comprehensive biological target intelligence from 9 parallel research paths covering protein info, structure, int... |
 
 #### Medical Imaging, Devices & Regulatory
 
@@ -366,7 +411,7 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 
 > Tools for academic search, database queries, citation management, and literature review.
 
-**38 skills** &nbsp;·&nbsp; [`skills/literature/`](skills/literature/)
+**29 skills** &nbsp;·&nbsp; [`skills/literature/`](skills/literature/)
 
 #### Biomedical Literature Search
 
@@ -384,19 +429,6 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 | [`pubmed-search`](skills/literature/pubmed-search/SKILL.md) | Search PubMed biomedical literature with natural language queries powered by Valyu semantic search. Full-text access, in... |
 | [`tooluniverse-literature-deep-research`](skills/literature/tooluniverse-literature-deep-research/SKILL.md) | Conduct comprehensive literature research with target disambiguation, evidence grading, and structured theme extraction.... |
 
-#### Chemical & Drug Databases
-
-| Skill | Description |
-|-------|-------------|
-| [`chembl-database`](skills/literature/chembl-database/SKILL.md) | Query ChEMBL bioactive molecules and drug discovery data. Search compounds by structure/properties, retrieve bioactivity... |
-| [`chembl-search`](skills/literature/chembl-search/SKILL.md) | Search ChEMBL bioactive molecules database with natural language queries. Find compounds and assay data with Valyu seman... |
-| [`drug-discovery-search`](skills/literature/drug-discovery-search/SKILL.md) | End-to-end drug discovery platform combining ChEMBL compounds, DrugBank, targets, and FDA labels. Natural language power... |
-| [`drug-labels-search`](skills/literature/drug-labels-search/SKILL.md) | Search FDA drug labels with natural language queries. Official drug information, indications, and safety data via Valyu. |
-| [`drugbank-search`](skills/literature/drugbank-search/SKILL.md) | Search DrugBank comprehensive drug database with natural language queries. Drug mechanisms, interactions, and safety dat... |
-| [`pubchem-database`](skills/literature/pubchem-database/SKILL.md) | Query PubChem via PUG-REST API/PubChemPy (110M+ compounds). Search by name/CID/SMILES, retrieve properties, similarity/s... |
-| [`tooluniverse-chemical-compound-retrieval`](skills/literature/tooluniverse-chemical-compound-retrieval/SKILL.md) | Retrieves chemical compound information from PubChem and ChEMBL with disambiguation, cross-referencing, and quality asse... |
-| [`zinc-database`](skills/literature/zinc-database/SKILL.md) | Access ZINC (230M+ purchasable compounds). Search by ZINC ID/SMILES, similarity searches, 3D-ready structures for dockin... |
-
 #### Genomic & Clinical Databases
 
 | Skill | Description |
@@ -408,7 +440,6 @@ Monica 会自动识别仓库结构并将所有 `SKILL.md` 加载到你的 Scienc
 | [`geo-database`](skills/literature/geo-database/SKILL.md) | Access NCBI GEO for gene expression/genomics data. Search/download microarray and RNA-seq datasets (GSE, GSM, GPL), retr... |
 | [`gwas-database`](skills/literature/gwas-database/SKILL.md) | Query NHGRI-EBI GWAS Catalog for SNP-trait associations. Search variants by rs ID, disease/trait, gene, retrieve p-value... |
 | [`hmdb-database`](skills/literature/hmdb-database/SKILL.md) | Access Human Metabolome Database (220K+ metabolites). Search by name/ID/structure, retrieve chemical properties, biomark... |
-| [`open-targets-search`](skills/literature/open-targets-search/SKILL.md) | Search Open Targets drug-disease associations with natural language queries. Target validation powered by Valyu semantic... |
 | [`openalex-database`](skills/literature/openalex-database/SKILL.md) | Query and analyze scholarly literature using the OpenAlex database. This skill should be used when searching for academi... |
 | [`pdb-database`](skills/literature/pdb-database/SKILL.md) | Access RCSB PDB for 3D protein/nucleic acid structures. Search by text/sequence/structure, download coordinates (PDB/mmC... |
 
