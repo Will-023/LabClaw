@@ -1,7 +1,6 @@
-# LabClaw Skills Library
+# LabClaw Library
 
-> **206 curated AI agent skills** for biomedical research — organized into five focused domains.
-
+**Equipping OpenClaw with 206 production-ready skills for autonomous biomedical research.**
 [![Skills](https://img.shields.io/badge/skills-206-blue?style=flat-square)](skills/)
 [![Biology](https://img.shields.io/badge/🧬_biology-73-brightgreen?style=flat-square)](skills/bio/)
 [![Pharmacy](https://img.shields.io/badge/💊_pharmacy-36-blueviolet?style=flat-square)](skills/pharma/)
@@ -479,7 +478,7 @@ Every `SKILL.md` follows a consistent structure:
 
 ## Credits
 
-Skills curated by Yingcheng (Charles) Wu @Stanford.
+Skills curated by Yingcheng (Charles) Wu at Le Cong Lab of Stanford & Mengdi Wang Lab at Princeton.
 
 ---
 
