@@ -1,8 +1,8 @@
-# LabClaw Library
+# LabClaw – Skill Operating Layer for Stanford LabOS & Next-Gen AI Co-Scientists
 
 <div align="center">
 
-**A production-ready OpenClaw skill library for autonomous biomedical research**
+**Powering dry-lab reasoning, protocol composition, and agentic workflows to close the loop with LabOS XR/wet-lab execution.**
 
 [![Skills](https://img.shields.io/badge/skills-211-blue?style=flat-square)](skills/)
 [![Biology](https://img.shields.io/badge/🧬_biology-66-brightgreen?style=flat-square)](skills/bio/)
