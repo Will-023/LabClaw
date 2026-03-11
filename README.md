@@ -20,6 +20,12 @@
 
 **English** · [简体中文](README.zh-CN.md)  · [Project](https://labclaw-ai.github.io/)
 
+<br>
+
+**☕ Support our research (Solana):** `6MKtYQYvn7k6PiTEE3N22wu6LoB36XVC2SoRqdL3bFom`
+
+</div>
+
 </div>
 
 LabClaw is a skill library, not a monolithic software package. You can install the full collection or copy only the skill folders that match your research workflows.
