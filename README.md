@@ -26,6 +26,8 @@
 
 **☕ Support our research (Solana):** `6MKtYQYvn7k6PiTEE3N22wu6LoB36XVC2SoRqdL3bFom`
 
+**No crypto affiliation, all memecoins are scams**
+
 </div>
 
 </div>
